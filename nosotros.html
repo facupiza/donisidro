@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Isidro Finca - Promoción de Aceite de Oliva</title>
+    <!-- Fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0; /* Color gris claro */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #3b5323; /* Verde más profundo */
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 3.5em;
+            font-family: 'Playfair Display', serif; /* Nueva tipografía para el título */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6b8e23; /* Verde oliva más suave */
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3b5323;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+            flex: 1;
+        }
+        .text-section {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .text-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: hidden;
+            max-height: 60px; /* Altura parcial */
+            transition: max-height 0.5s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .text-box:hover {
+            max-height: 200px; /* Se expande */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        .text-box h3 {
+            margin: 0;
+            color: #3b5323;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        .text-box p {
+            margin: 0;
+            display: none; /* El texto queda oculto por defecto */
+            line-height: 1.5;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .text-box:hover p {
+            display: block; /* Mostrar el texto al pasar el cursor */
+        }
+        .image-section {
+            width: 45%;
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #3b5323;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Don Isidro Finca</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="compras.html">comprar</a>
+        <a href="nosotros.html">nosotros</a>
+        <a href="contactos.html">Contactos</a>
+    </nav>
+
+    <main>
+        <!-- Sección de textos -->
+        <div class="text-section">
+            <div class="text-box">
+                <h3>Nuestra Historia</h3>
+                <p>
+                    Todo comenzó hace más de un siglo, con mi bisabuelo cultivando los primeros olivos en nuestra finca familiar. Cada generación ha trabajado con amor y dedicación.
+                </p>
+            </div>
+            <div class="text-box">
+                <h3>Sobre Nosotros</h3>
+                <p>
+                    Somos dos hermanos nacidos en Buenos Aires, herederos de una tradición olivarera que llevamos en el corazón. Ofrecemos aceites de oliva virgen extra de calidad excepcional.
+                </p>
+            </div>
+        </div>
+
+        <!-- Imagen -->
+        <div class="image-section">
+            <img src="olivos.jpg" alt="Imagen de los olivos">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Don Isidro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
